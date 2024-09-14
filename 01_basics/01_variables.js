@@ -1,8 +1,8 @@
-// There are three types of variables var,let and const,
-//var is function level scope where let and const have block scope.
-//NOTE: var can have global level scope if it is declared outside function.
+//* There are three types of variables var,let and const,
+//*var is function level scope where let and const have block scope.
+//!NOTE: var can have global level scope if it is declared outside function.
 
-// "use strict" //use strict must be used before any code otherwise it will not work
+//? "use strict" //use strict must be used before any code otherwise it will not work
 
 // const accountId = 144553
 // let accountEmail = "hitesh@google.com"
@@ -33,7 +33,7 @@
 //     c=4;
 // } 
 // console.log(c);//result 4
-// Note:Because var keyword has a function level scope but declared outside it have global level scope and variable c defined in block and outside the block both refer to the same variable.So variable c in block reassign the value which is 4.
+//! Note:Because var keyword has a function level scope but declared outside it have global level scope and variable c defined in block and outside the block both refer to the same variable.So variable c in block reassign the value which is 4.
 
 // Question 6.
 // {
@@ -65,7 +65,7 @@
 //    console.log(x);
 // }
 // console.log(x);//result 20 10
-// NOTE: These two x variables are not the same object; they are distinct variables with the same name but different scopes.
+//! NOTE: These two x variables are not the same object; they are distinct variables with the same name but different scopes.
 
 // Question 10.
 // let x=10;
@@ -74,18 +74,18 @@
 //     let x=20;
 // }
 // foo();// result reference error : cannot access 'x' before initialization.
-// NOTE:(let x=10) is globally declared and initialized but foo() function has its local variable x also, which shadows(more priority than global variable inside its scope) the outer variable(global variable) so due to the concept of hoisting let x=20 will be hoisted and javascript interpret this code like this:
-// let x = 10;
+//! NOTE:(let x=10) is globally declared and initialized but foo() function has its local variable x also, which shadows(more priority than global variable inside its scope) the outer variable(global variable) so due to the concept of hoisting let x=20 will be hoisted and javascript interpret this code like this:
+//! let x = 10;
 
-// function foo() {
-//     let x; // 'x' is hoisted to the top of the function scope but not yet initialized
-//     console.log(x); // Trying to access 'x' which is currently undefined
-//     x = 20; // 'x' is initialized here
-// }
+//! function foo() {
+//!     let x; // 'x' is hoisted to the top of the function scope but not yet initialized
+//!     console.log(x); // Trying to access 'x' which is currently undefined
+//!     x = 20; // 'x' is initialized here
+//! }
 
-// foo();
-// so it gives reference error
+//! foo();
+//! so it gives reference error
 
-// if it is declared with var keyword then it gives undefined because due to the concept of hoisting when variable have var datatype then it is hoisted to the top with initial value undefined but on the case of let keyword it is declared only not initialized.
+//! if it is declared with var keyword then it gives undefined because due to the concept of hoisting when variable have var datatype then it is hoisted to the top with initial value undefined but on the case of let keyword it is declared only not initialized.
 
 
