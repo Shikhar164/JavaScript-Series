@@ -36,7 +36,8 @@ const myArr=new Array(1,2,3,4,5,"hello",true)
 //     console.log(myArr[a])
 // }
 
-//todo: 4.forEach() method:
+//todo: 4.forEach() method: for each method calls a function for the each element of the array and its return value is udefined.
+//todo: array.forEach(function(currentValue, index, arr), thisValue)
 // myArr.forEach((num)=>{
 //     console.log(num)
 // })
