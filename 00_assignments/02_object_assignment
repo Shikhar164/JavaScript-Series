@@ -1,0 +1,13 @@
+let person = {
+  name: "Aman",
+  age: 30,
+  address: {
+    street: "123 MG Road",
+    city: "New Delhi",
+    location: {
+      lat: 80,
+      long: 56,
+    },
+  },
+};
+
